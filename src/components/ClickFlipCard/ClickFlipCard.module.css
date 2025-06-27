@@ -1,0 +1,40 @@
+.cardContainer {
+  perspective: 1000px;
+  width: 300px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.cardInner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.cardFace {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 1px solid #ddd;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background-color: #f3f4f6;
+}
