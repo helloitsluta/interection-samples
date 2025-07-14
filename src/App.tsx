@@ -1,9 +1,11 @@
+import './App.css'
 import { Sparkles } from 'lucide-react'
 import HoverCard from './components/HoverCard/HoverCard'
 import ClickFlipCard from './components/ClickFlipCard/ClickFlipCard'
 import ScrollRevealCard from './components/ScrollRevealCard/ScrollRevealCard'
 import DragCard from './components/DragCard/DragCard'
 import TypeEffectCard from './components/TypeEffectCard/TypeEffectCard'
+import HoverGlowCard from './components/HoverGlowCard/HoverGlowCard'
 
 function App() {
   return (
@@ -27,27 +29,30 @@ function App() {
           pause={500}
         />
       </section>
-      <section style={{ marginTop: '8rem' }}>
+      <section>
         <h2 style={{ marginBottom: '1rem' }}>Hover Interection</h2>
-        <HoverCard
-          title="Smart AI Tools"
-          description="Boost your productivity with intelligent automation."
-          icon={<Sparkles />}
-        />
+        <div style={{ display: 'flex', gap: '2rem', justifyContent: 'start' }}>
+          <HoverCard
+            title="Smart AI Tools"
+            description="Boost your productivity with intelligent automation."
+            icon={<Sparkles />}
+          />
+          <HoverGlowCard text="Hover over me" icon={<Sparkles />} />
+        </div>
       </section>
-      <section style={{ marginTop: '8rem' }}>
+      <section>
         <h2 style={{ marginBottom: '1rem' }}>Click Interection</h2>
         <ClickFlipCard />
       </section>
-      <section style={{ marginTop: '8rem' }}>
+      <section>
         <h2 style={{ marginBottom: '1rem' }}>Drag Interaction</h2>
         <div style={{ display: 'flex', gap: '2rem', justifyContent: 'start' }}>
           <DragCard content="Drag me!" />
           <DragCard content="And me too!" />
         </div>
       </section>
-      <section style={{ marginTop: '8rem' }}>
-        <h2>Scroll Interactions</h2>
+      <section>
+        <h2>Scroll Interaction</h2>
         <ScrollRevealCard title="Scroll In #1">
           Ad voluptate est qui labore ad ullamco adipisicing. Duis fugiat irure
           nostrud consectetur laboris quis reprehenderit adipisicing dolore.

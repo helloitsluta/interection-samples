@@ -1,0 +1,4 @@
+/* Add top margin to every section except the first one */
+section + section {
+  margin-top: 8rem;
+}
