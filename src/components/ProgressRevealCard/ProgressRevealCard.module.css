@@ -1,0 +1,16 @@
+.card {
+  width: 100%;
+  max-width: 300px;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+  font-size: 0.95rem;
+  color: #4b5563;
+  line-height: 1.6;
+}
+.line {
+  overflow: hidden;
+  height: 1.5em;
+}
