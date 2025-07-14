@@ -1,0 +1,37 @@
+.cardWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  width: 300px;
+  height: 180px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  perspective: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+}
+
+.navButton {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #888;
+  padding: 0.5rem;
+  user-select: none;
+  transition: color 0.2s;
+}
+.navButton:hover {
+  color: #000;
+}
